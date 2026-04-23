@@ -1,3 +1,20 @@
+
+
+# 0.  What are variables?
+
+- Variables are used to store data values and can be declared using var, let or const.
+
+| Thuộc tính    | var       | let   | const       |
+| ------------- | --------- | ----- | ----------- |
+| Scope         | Function  | Block | Block       |
+| Gán lại       | ✅         | ✅     | ❌           |
+| Khai báo lại  | ✅         | ❌     | ❌           |
+| Hoisting      | Có        | Có    | Có          |
+| Dùng phổ biến | ❌ (tránh) | ✅     | ✅ (ưu tiên) |
+
+
+
+
 # 1. Function
 
 
@@ -93,7 +110,7 @@ ex:
 
 ![alt text](image.png)
 
-## Create an ex function that rreturn a function:
+## Create an ex function that return a function:
 
 ![alt text](image-1.png)
 
@@ -130,7 +147,7 @@ Ex2:
 
 ![alt text](image-9.png)
 
-# 7. Scope and Context:
+# 7. Scope( phạm vi ) and Context( ngữ cảnh ):
 
 ## Scope:
 
@@ -145,3 +162,67 @@ Ex2:
 - Code di chuyển lên từng cấp đến khi tìm được.
 
 ![alt text](image-12.png)
+
+## This:
+
+- the ` this` keyword points towards the object that is executing the current function
+
+![alt text](image-13.png)
+
+## call:
+
+![alt text](image-14.png)
+
+# 8. Anonymous functions:
+
+![alt text](image-15.png)
+
+# 9. Arrow functions: 
+- An arrow function is a special type of function that uses an alternate syntax or we could say a cleaner or modr minimalistic syntax 
+
+![alt text](image-18.png)
+
+![alt text](image-17.png)
+
+* Ex:
+
+![alt text](image-19.png)
+
+to:
+
+![alt text](image-20.png)
+
+* Ex2:( this ):
+
+![alt text](image-21.png)
+
+![alt text](image-22.png)
+
+# 10. Function hoisting:
+
+![alt text](image-23.png)
+
+
+![alt text](image-24.png)
+
+* Không phải hàm nào cũng có hoisting:
+
+
+![alt text](image-25.png)
+
+![alt text](image-26.png)
+
+# 11. Template literals:
+
+![alt text](image-27.png)
+
+# 12. Semicolons:
+
+![alt text](image-28.png)
+
+# 13. toString() là gì?
+
+Trong JavaScript, số (`Number`) có hàm `.toString(base)` để chuyển số sang chuỗi theo hệ cơ số (base).
+- `base = 2` → hệ nhị phân (binary)
+- `base = 10` → hệ thập phân (decimal)
+- `base = 16` → hệ thập lục phân (hex)
