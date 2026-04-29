@@ -93,7 +93,7 @@ note:
 - If you don't specify a type in the <ol> tag, what type does it default to?
 - If you don't specify a type in the <ol> tag, it will default to using numbers (1,2,3 ...) in your list.
 
-# 7. inline and block elements:
+# 7. inline and block elements `<span>` `<div>`:
 
 ![alt text](image-20.png)
 
