@@ -63,6 +63,7 @@ Ex:
 
 # 3. Sizing:
 
+
 ## 3.1 Pixel(Absolute):
 
 - Pixel is what's called an absolute unit, meaning it doesn't depend on anything.
@@ -122,4 +123,6 @@ NOTE: **If no font size here, but the browser will actually act as if the HTML e
 https://fonts.google.com
 
 
+tài liệu thanm khảo:
 
+https://www-w3schools-com.translate.goog/css/default.asp?_x_tr_sl=en&_x_tr_tl=vi&_x_tr_hl=vi&_x_tr_pto=tc
