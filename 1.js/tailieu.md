@@ -245,8 +245,13 @@ ex:
 
 ![alt text](image-38.png)
 
+## Toán tử ba ngôi (Ternary Operator):
 
-## 4.8 Data Tyres:
+1. Cú pháp tổng quát:
+
+       Biểu_thức_điều_kiện ? Giá_trị_khi_đúng : Dạng_trả_về_khi_sai;
+
+## 4.9 Data Tyres:
 
 ![alt text](image-37.png)
 
@@ -401,6 +406,8 @@ to:
 # 15. the comparison operators:
 
 ![alt text](image-42.png)
+
+
 
 # 16. Popup box:
 
@@ -577,3 +584,113 @@ to:
 ## Array.slice():
 
 ![alt text](image-105.png)
+
+# Number method:
+
+![alt text](image-124.png)
+
+- `parseFloat()` trong JavaScript là hàm toàn cục dùng để phân tích một chuỗi (string) và trả về một số thực (số thập phân). Hàm này đọc chuỗi từ trái sang phải, bỏ qua khoảng trắng, và dừng lại khi gặp ký tự không hợp lệ (không phải số, dấu chấm thập phân, hoặc dấu +/-), trả về `NaN` ( Not-a-Number ) nếu ký tự đầu tiên không thể chuyển đổi. 
+
+![alt text](image-125.png)
+
+- `.toFixed()` trong JavaScript được sử dụng để làm tròn một số đến một số lượng chữ số thập phân nhất định và trả về kết quả dưới dạng chuỗi (string). Đây là công cụ phổ biến để hiển thị dữ liệu tài chính hoặc các phép đo cần độ chính xác cố định. 
+
+# Math method:
+
+![alt text](image-106.png)
+
+## Math.ceil():
+
+![alt text](image-107.png)
+
+- show us the upper value.
+
+## Math.floor():
+
+![alt text](image-108.png)
+
+- it will print us the lower value.
+
+## Math.round():
+
+![alt text](image-109.png)
+
+![alt text](image-110.png)
+
+- it's used to convert the decimal value into a normal value, meaning that it's used to display the decimal value without a point.
+
+## math.trunc():
+
+![alt text](image-111.png)
+
+- `The Math.trunc()` method returns the integer part of a number.
+
+- `The Math.trunc()` method removes the decimals (does NOT round the number).
+
+## Math.max():
+
+![alt text](image-112.png)
+
+## Math.min():
+
+![alt text](image-113.png)
+
+## Math.sqrt():
+
+![alt text](image-114.png)
+
+- căn bậc 2
+
+## Math.cbrt():
+
+![alt text](image-115.png)
+
+- căn bậc 3
+
+## Math.pow():
+
+![alt text](image-116.png)
+
+- gấp số lần
+
+## Math.random():
+
+![alt text](image-117.png)
+
+![alt text](image-118.png)
+
+## Math.abs():
+
+![alt text](image-119.png)
+
+## Math.PI:
+
+![alt text](image-120.png)
+
+# Date method:
+
+![alt text](image-121.png)
+
+## new Date:
+
+![alt text](image-122.png)
+
+![alt text](image-123.png)
+
+# DOM model:
+
+![alt text](image-126.png)
+
+![alt text](image-127.png)
+
+![alt text](image-128.png)
+
+## DOM GET Method:
+
+![alt text](image-129.png)
+
+![alt text](image-130.png)
+
+
+
+
