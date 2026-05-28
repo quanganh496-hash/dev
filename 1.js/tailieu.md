@@ -113,7 +113,7 @@ ex:
 - `join` adds value in between each value.
 
 
-## 3.2 slice and splice method:
+## 3.4 slice and splice method:
 
 
 ![alt text](image-66.png)
@@ -124,7 +124,7 @@ ex:
 
 - `splice` adds the value in the position we want.
 
-## isarray method:
+## 3.5 isarray method:
 
 ![alt text](image-67.png)
 
@@ -132,7 +132,7 @@ ex:
 
 `is` method is used to check the data type of the past value and tell us if it's in the array.
 
-## indexOf and lastindex method:
+## 3.6 indexOf and lastindex method:
 
 ![alt text](image-69.png)
 
@@ -140,7 +140,7 @@ ex:
 
 -  `index off ` is used for searching the array's content.
 
-## ForEach method:
+## 3.7 ForEach method:
 
 ![alt text](image-73.png)
 
@@ -148,7 +148,7 @@ ex:
 
 - `forEach` trong JavaScript là phương thức tích hợp sẵn trên Array dùng để lặp qua từng phần tử, thực thi một hàm `callback`. Nó giúp mã ngắn gọn, dễ đọc, tự động duyệt mảng theo thứ tự chỉ mục tăng dần
 
-## includes method:
+## 3.8 includes method:
 
 ![alt text](image-77.png)
 
@@ -156,7 +156,7 @@ ex:
 
 - we want to find which value we give in our array, then we can use the include method
 
-## some and every method:
+## 3.9 some and every method:
 
 ![alt text](image-78.png)
 
@@ -166,7 +166,7 @@ ex:
 
 - There is all value is much greater or equal to 18 . it will true.
 
-## find and findindex method:
+## 3.11 find and findindex method:
 
 ![alt text](image-86.png)
 
@@ -178,13 +178,13 @@ ex:
 
 
 
-## 3.4.Làm tròn số: 
+## 3.12 Làm tròn số: 
 
 ![alt text](/1.js/image/image-7.png)
 
 =>> 8
 
-## 3.5 Để tra cứu 1 mục trong 1 mảng bằng chỉ số của nó
+## 3.13 Để tra cứu 1 mục trong 1 mảng bằng chỉ số của nó
 
 ![alt text](/1.js/image/image-11.png)
 
@@ -193,6 +193,24 @@ ex:
 ![alt text](/1.js/image/image-12.png)
 
 ==> dog
+
+## 3.14 Reduce:
+
+- Phương thức `reduce()` trong JavaScript được dùng để duyệt qua các phần tử của mảng và "tích lũy" chúng lại thành một giá trị duy nhất. Đây là một công cụ cực kỳ linh hoạt, không làm thay đổi mảng ban đầu và thường được dùng để tính tổng, làm phẳng mảng, hoặc nhóm dữ liệu
+
+      array.reduce((accumulator, currentValue, currentIndex, array) => {
+          // Logic tích lũy
+      }, initialValue);
+
+- `accumulator`: Biến tích luỹ, lưu trữ kết quả của lần lặp trước (giá trị trả về của hàm).
+- `currentValue`: Phần tử của mảng đang được xử lý trong vòng lặp hiện tại.
+- `initialValue` (Tùy chọn): Giá trị khởi tạo ban đầu cho `accumulator`. Nếu không truyền, accumulator sẽ mặc định là phần tử đầu tiên của mảng
+
+![alt text](image-133.png)
+
+![alt text](image-134.png)
+
+
 
 # 4. Making decisions:
 
