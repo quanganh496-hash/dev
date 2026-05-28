@@ -16,37 +16,37 @@
 
 # 1. Html Atributes
 
-![alt text](image-50.png)
+![alt text](/3.%20html/images/image-50.png)
 
 # 2.Path:
 
 - get out of the folder amd get in of the folder
 
-![alt text](image.png)
+![alt text](/3.%20html/images/image.png)
 
 # 3.Tab:
 ## 1. `<b>` `<strong>` `<i>` `<em>` `<br>` :
 
-![alt text](image-1.png)
+![alt text](/3.%20html/images/image-1.png)
 
-![alt text](image-2.png)
+![alt text](/3.%20html/images/image-2.png)
 
 ## 2.`<sup>` `<sub>`
-![alt text](image-3.png)
+![alt text](/3.%20html/images/image-3.png)
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 ## 3. `<h1>`,....
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 ## 4. `<blockquote>`
-![alt text](image-8.png) ( dùng để trích dẫn )
+![alt text](images/image-8.png)
 
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 ## 5. `<pre>`
-![alt text](image-10.png) ( định nghĩa văn bản đã được định dạng trước )
+![alt text](images/image-10.png)
 
-![alt text](image-11.png)
+![alt text](images/image-11.png)
 
  Note:
 
@@ -56,15 +56,15 @@
 
 ## 6.HTML image tag:
 
-![alt text](image-13.png)
+![alt text](images/image-13.png)
 
-![alt text](image-14.png)
+![alt text](images/image-14.png)
 
-![alt text](image-15.png)
+![alt text](images/image-15.png)
 
 # 4.Web image fomats:
 
-![alt text](image-16.png)
+![alt text](images/image-16.png)
 
 Note: 
 
@@ -73,7 +73,7 @@ Note:
 
 # 5.Anchor Tab `<a>`:
 
-![alt text](image-17.png)
+![alt text](images/image-17.png)
 - is used to create **hyperlinks** that connect one page or resource to another.
 
 note:
@@ -82,9 +82,9 @@ note:
 - If this is a text based hyperlink and you forget to put text between the open and close `<a>` tag, you wont have anything for the user to click on and hence your link won't really work.
 
 # 6. Unorder and Order list:
-![alt text](image-18.png)
+![alt text](images/image-18.png)
 
-![alt text](image-19.png)
+![alt text](images/image-19.png)
 
 - có thể thay `type="A"` bằng `i` `I` `1`. 
 
@@ -95,79 +95,79 @@ note:
 
 # 7. inline and block elements `<span>` `<div>`:
 
-![alt text](image-20.png)
+![alt text](images/image-20.png)
 
 - inline elements can site side by side `span` 
 
-![alt text](image-21.png)
+![alt text](images/image-21.png)
 
 - the block elements don't want to share the line So they forced each other onto the next block of the next line. `div`
 
 # 8.Creating Basic Table:
 
-![alt text](image-22.png)
+![alt text](images/image-22.png)
 
-![alt text](image-23.png)
-
-
-![alt text](image-24.png)
+![alt text](images/image-23.png)
 
 
-![alt text](image-25.png)
+![alt text](images/image-24.png)
+
+
+![alt text](images/image-25.png)
 
 - `border="1" ` viền
 
 ## 8.1 Gộp hàng:
 
-![alt text](image-30.png)
+![alt text](images/image-30.png)
 
-![alt text](image-27.png)
+![alt text](images/image-27.png)
 
 - `colspan= "3" ` gộp 3 cột 
 
 ## 8.2 Gộp cột :
 
-![alt text](image-28.png)
+![alt text](images/image-28.png)
 
-![alt text](image-29.png)
+![alt text](images/image-29.png)
 
 # 9. Form tag:
 
-![alt text](image-31.png)
+![alt text](images/image-31.png)
 
 # 10.Input type text and password :
 
-![alt text](image-32.png)
+![alt text](images/image-32.png)
 
-![alt text](image-33.png)
+![alt text](images/image-33.png)
 
 # 11. Radio buttons and check boxes:
 
-![alt text](image-36.png)
+![alt text](images/image-36.png)
 
-![alt text](image-35.png)
+![alt text](images/image-35.png)
 
 # 12. Drop down box:
 
-![alt text](image-37.png)
+![alt text](images/image-37.png)
 
 - selected : defail.
 
-![alt text](image-39.png)
+![alt text](images/image-39.png)
 
-![alt text](image-38.png)
+![alt text](images/image-38.png)
 
 # 13. Textareas:
 
-![alt text](image-40.png)
+![alt text](images/image-40.png)
 
-![alt text](image-41.png)
+![alt text](images/image-41.png)
 
 # 14. Submit and reset buttons:
 
-![alt text](image-42.png)
+![alt text](images/image-42.png)
 
-![alt text](image-43.png)
+![alt text](images/image-43.png)
 
 note:
 
@@ -176,13 +176,13 @@ note:
 
 # 15. Semantic elements:
 
-![alt text](image-44.png)
+![alt text](images/image-44.png)
  
 # 16. Common entities:
 
-![alt text](image-45.png)
+![alt text](images/image-45.png)
 
-![alt text](image-46.png)
+![alt text](images/image-46.png)
 
 note:
 
@@ -191,11 +191,11 @@ note:
 
 # 17. `<style>`:
 
-![alt text](image-48.png)
+![alt text](images/image-48.png)
 
-![alt text](image-47.png)
+![alt text](images/image-47.png)
 
-![alt text](image-49.png)
+![alt text](images/image-49.png)
 
 1. Đặc điểm quan trọng:
 
@@ -211,5 +211,5 @@ note:
 
 - Trong JavaScript, thẻ `<script>` là thẻ HTML dùng để nhúng hoặc liên kết mã JavaScript vào trang web.
 
-![alt text](image-51.png)
+![alt text](images/image-51.png)
 

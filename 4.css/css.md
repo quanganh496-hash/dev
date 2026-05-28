@@ -7,47 +7,47 @@
 
 Class trong CSS (lớp) là bộ chọn (selector) dùng để định kiểu (style) cho một hoặc nhiều phần tử HTML cụ thể có cùng thuộc tính lớp. Class được khai báo bằng dấu chấm (.) theo sau là tên lớp. Nó cho phép tái sử dụng định dạng trên nhiều phần tử, giúp mã HTML/CSS gọn nhẹ, dễ bảo trì và tối ưu hóa quy trình thiết kế giao diện web. 
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
-![alt text](image.png)
+![alt text](images/image.png)
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 ## 1.3 ID
 
 ID trong CSS (định danh) được dùng để định kiểu cho một phần tử HTML duy nhất trên trang web. ID sử dụng dấu thăng `(#)` theo sau là tên ID để chọn phần tử. Mỗi trang chỉ nên có một phần tử mang ID đó, có độ ưu tiên cao cao nhất trong CSS, thường dùng cho các thành phần độc nhất như `#header`, `#footer`
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 # 2. Color:
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
 ## 2.1 Muốn nhạt hơn:
 
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 
-![alt text](image-10.png)
+![alt text](images/image-10.png)
 
 ## 2.2 Hex values:
 
-![alt text](image-11.png)
+![alt text](images/image-11.png)
 
-![alt text](image-12.png)
+![alt text](images/image-12.png)
 
 ## 2.3 RGB values:
 
-![alt text](image-13.png)
+![alt text](images/image-13.png)
 
-![alt text](image-14.png)
+![alt text](images/image-14.png)
 
 - That's red, green, blue, alpha.
 - The Alpha Channel is the transparency level of your color or opacity level.
@@ -59,7 +59,7 @@ ID trong CSS (định danh) được dùng để định kiểu cho một phần
 
 Ex:
 
-![alt text](image-15.png)
+![alt text](images/image-15.png)
 
 # 3. Sizing:
 
@@ -93,7 +93,7 @@ NOTE: **If no font size here, but the browser will actually act as if the HTML e
 
 # 4. Box model:
 
-![alt text](image-16.png)
+![alt text](images/image-16.png)
 
 ## 4.1 Content:
 

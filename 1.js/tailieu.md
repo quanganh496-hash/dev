@@ -197,11 +197,11 @@ ex:
 # 4. Making decisions:
 
 
-## 4.2 while:
+## 4.1 while:
 
 ![alt text](/1.js/image/image-14.png)
 
-### 4.2.1 Mỗi câu nằm trên 1 dòng riêng:
+### 4.2 Mỗi câu nằm trên 1 dòng riêng:
 
 ![alt text](/1.js/image/image-15.png)
 
@@ -488,34 +488,34 @@ to:
 
 ![alt text](image-90.png)
 
-## Array.length:
+## String.length:
 
 ![alt text](image-88.png)
 
 
-## Array.UpperCase() :
+## String.UpperCase() :
 
 ![alt text](/1.js/image/image-6.png)
 
 =>>TOM
 
-## Array.LowerCase():
+## String.LowerCase():
 
 ![alt text](image-89.png)
 
-## Array.includes():
+## String.includes():
 
 ![alt text](image-91.png)
 
 - you can search what are you looking for in the array(whole word).
 
-## Array.startsWith():
+## String.startsWith():
 
 ![alt text](image-92.png)
 
 - search the array startswith.
 
-## Array.endsWith():
+## String.endsWith():
 
 ![alt text](image-93.png)
 
@@ -535,31 +535,31 @@ to:
 
 - `G` means it will search globally. It means that it will search and the whole string. 
 
-## Array.lastIndexOf():
+## String.lastIndexOf():
 
 ![alt text](image-96.png)
 
-## Array.indexOf():
+## String.indexOf():
 
 ![alt text](image-97.png)
 
-## Arary.replace():
+## String.replace():
 
 ![alt text](image-98.png)
 
-## Array.trim():
+## String.trim():
 
 ![alt text](image-99.png)
 
 - So this trim method is mostly used in the form text and the form text when the user submits his data and if he accidentally put some space, then to remove that space, the true method is used.
 
-## Array.charAt():
+## String.charAt():
 
 ![alt text](image-100.png)
 
 - So it's displaying the one which corresponds to the 20 positions. 
 
-## Array.charCodeAt():
+## String.charCodeAt():
 
 ![alt text](image-101.png)
 
@@ -567,21 +567,21 @@ to:
 
 - tra chữ từ bảng hiện bằng số
 
-## Array.concat():
+## String.concat():
 
 - when we have to make two arrays into one, then we use this like we use the content and same process as with string.
 
-## Array.split():
+## String.split():
 
 ![alt text](image-103.png)
 
 - The split is when we have to convert our string into an array, then we can do it by split
 
-## Array.repeat():
+## String.repeat():
 
 ![alt text](image-104.png)
 
-## Array.slice():
+## String.slice():
 
 ![alt text](image-105.png)
 
@@ -677,19 +677,7 @@ to:
 
 ![alt text](image-123.png)
 
-# DOM model:
 
-![alt text](image-126.png)
-
-![alt text](image-127.png)
-
-![alt text](image-128.png)
-
-## DOM GET Method:
-
-![alt text](image-129.png)
-
-![alt text](image-130.png)
 
 
 
