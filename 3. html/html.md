@@ -14,9 +14,19 @@
 
 - Kiểu dáng xác định cách các trang web sẽ được trình bày và cách chúng sẽ hoạt động.
 
-# 1. Html Atributes
+![alt text](image-1.png)
+
+# 1. Html Atributes:
+
+![alt text](image-2.png)
 
 ![alt text](/3.%20html/images/image-50.png)
+
+# style:
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
 
 # 2.Path:
 
@@ -24,7 +34,12 @@
 
 ![alt text](/3.%20html/images/image.png)
 
-# 3.Tab:
+# 3.Tags:
+
+![alt text](image.png)
+
+
+
 ## 1. `<b>` `<strong>` `<i>` `<em>` `<br>` :
 
 ![alt text](/3.%20html/images/image-1.png)
@@ -56,6 +71,8 @@
 
 ## 6.HTML image tag:
 
+![alt text](image-5.png)
+
 ![alt text](images/image-13.png)
 
 ![alt text](images/image-14.png)
@@ -81,7 +98,12 @@ note:
 - What happens if you forget to put text in between the opening `<a>` tag and the closing `</a>` tag?
 - If this is a text based hyperlink and you forget to put text between the open and close `<a>` tag, you wont have anything for the user to click on and hence your link won't really work.
 
-# 6. Unorder and Order list:
+# 6. list tags:
+
+![alt text](image-9.png)
+
+
+
 ![alt text](images/image-18.png)
 
 ![alt text](images/image-19.png)
@@ -105,15 +127,11 @@ note:
 
 # 8.Creating Basic Table:
 
-![alt text](images/image-22.png)
+![alt text](image-8.png)
 
-![alt text](images/image-23.png)
+![alt text](image-6.png)
 
-
-![alt text](images/image-24.png)
-
-
-![alt text](images/image-25.png)
+![alt text](image-7.png)
 
 - `border="1" ` viền
 
@@ -131,15 +149,59 @@ note:
 
 ![alt text](images/image-29.png)
 
+# video tags:
+
+![alt text](image-11.png)
+
+![alt text](image-12.png)
+
+# Audio tags:
+
+![alt text](image-13.png)
+
+![alt text](image-14.png)
+
 # 9. Form tag:
 
 ![alt text](images/image-31.png)
 
-# 10.Input type text and password :
+![alt text](image-15.png)
 
-![alt text](images/image-32.png)
+![alt text](image-16.png)
 
-![alt text](images/image-33.png)
+![alt text](image-17.png)
+
+![alt text](image-18.png)
+
+![alt text](image-19.png)
+
+# 10.Input type:
+
+![alt text](image-20.png)
+
+http://127.0.0.1:5500/3.%20html/Input%20Types.html
+
+![alt text](image-21.png)
+
+![alt text](image-22.png)
+
+![alt text](image-23.png)
+
+## Additional input attributes (Min, max, multiple, and placeholder, required)
+
+
+![alt text](image-24.png)
+
+ - `placeholder` là thuộc tính tạo dòng chữ gợi ý mờ bên trong ô nhập liệu
+ - `required` là thuộc tính bắt buộc người dùng phải điền thông tin trước khi gửi biểu mẫu
+
+# Block and inline elements:
+
+![alt text](image-25.png)
+
+![alt text](image-26.png)
+
+![alt text](image-27.png)
 
 # 11. Radio buttons and check boxes:
 
@@ -213,3 +275,6 @@ note:
 
 ![alt text](images/image-51.png)
 
+# 19. footer:
+
+- Thẻ `footer` được sử dụng để xác định phần dưới cùng của trang web.
