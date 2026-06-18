@@ -236,7 +236,7 @@ Các giá trị cơ bản
 
 ![alt text](image-33.png)
 
-border-radius là thuộc tính CSS dùng để bo tròn các góc của một phần tử.Cách hoạt động cơ bảnGiá trị: Có thể dùng đơn vị pixel (px), phần trăm (%), em, rem, v.v.Hình tròn hoàn hảo: Để tạo một hình tròn từ một khối hình vuông, hãy đặt border-radius: 50%;.
+- `border-radius` là thuộc tính CSS dùng để bo tròn các góc của một phần tử.Cách hoạt động cơ bảnGiá trị: Có thể dùng đơn vị pixel (px), phần trăm (%), em, rem, v.v.Hình tròn hoàn hảo: Để tạo một hình tròn từ một khối hình vuông, hãy đặt border-radius: 50%;.
 
 ![alt text](image-39.png)
 
@@ -264,11 +264,9 @@ border-radius là thuộc tính CSS dùng để bo tròn các góc của một p
 
 ![alt text](image-37.png)
 
-
-
 ![alt text](image-38.png)
 
-Media Queries là một tính năng cốt lõi của CSS3 cho phép bạn áp dụng các kiểu định dạng khác nhau dựa trên đặc điểm của thiết bị hiển thị, chẳng hạn như kích thước màn hình, độ phân giải hoặc hướng xoay. Đây là công cụ nền tảng để xây dựng giao diện Responsive Web Design (thiết kế web thích ứng), giúp trang web hiển thị tối ưu từ điện thoại di động, máy tính bảng đến máy tính để bàn
+- `Media Queries` là một tính năng cốt lõi của CSS3 cho phép bạn áp dụng các kiểu định dạng khác nhau dựa trên đặc điểm của thiết bị hiển thị, chẳng hạn như kích thước màn hình, độ phân giải hoặc hướng xoay. Đây là công cụ nền tảng để xây dựng giao diện Responsive Web Design (thiết kế web thích ứng), giúp trang web hiển thị tối ưu từ điện thoại di động, máy tính bảng đến máy tính để bàn
 
 ![alt text](image-46.png)
 
