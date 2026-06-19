@@ -8,11 +8,11 @@
 
 - with `let`, we cannot redeclare a variable with the same name.
 
-![alt text](image-1.png)
+![alt text](/6.TS/images/image-1.png)
 
 - The second type of variable is `const`, and it comes with several restrictions. You cannot assign values to a const variable multiple times or redeclare it.
 
-![alt text](image.png)
+![alt text](/6.TS/images/image.png)
 
 ## Datatypes:( String, number, boolean, null, object, arrays, undefined)
 
@@ -28,7 +28,7 @@
 
 - This demonstrates how we can use classes and constructors to initialize objects, and it's coded in TypeScript.
 
-![alt text](image-2.png)
+![alt text](/6.TS/images/image-2.png)
 
 # Advanced:
 
@@ -42,7 +42,7 @@ as a template for child classes.
 -  `child classes` inherit from `parent classes` and can also introduce their own specific
 properties and methods. They even have the ability to override existing methods.
 
-![alt text](image-3.png)
+![alt text](/6.TS/images/image-3.png)
 
 ## Modules:
 
@@ -50,11 +50,11 @@ properties and methods. They even have the ability to override existing methods.
 
 - Modules are like program building blocks used to identify and reuse code.They come in various forms, but their primary purpose is to make the code modular and easy to maintain.
 
-![alt text](image-4.png)
+![alt text](/6.TS/images/image-4.png)
 
-![alt text](image-5.png)
+![alt text](/6.TS/images/image-5.png)
 
-![alt text](image-6.png)
+![alt text](/6.TS/images/image-6.png)
 
 ## Explicit vs Annotation:
 
@@ -65,11 +65,11 @@ defining the return type of functions in TypeScript and JavaScript.
 
 - `void` được sử dụng để biểu thị rằng một hàm không trả về bất kỳ giá trị nào. Đây là kiểu dữ liệu phổ biến khi bạn viết các hàm thực thi một hành động (như ghi log, thay đổi dữ liệu toàn cục) thay vì tính toán và trả về kết quả
 
-![alt text](image-7.png)
+![alt text](/6.TS/images/image-7.png)
 
 ## Unknowes:
 
-![alt text](image-8.png)
+![alt text](/6.TS/images/image-8.png)
 
 ## 
 
@@ -115,13 +115,13 @@ defining the return type of functions in TypeScript and JavaScript.
 Conversely, if a method is marked as private, it's restricted to the class where it's defined.
 
 public:
-![alt text](image-9.png)
+![alt text](/6.TS/images/image-9.png)
 
 
 private:
-![alt text](image-10.png)
+![alt text](/6.TS/images/image-10.png)
 
-![alt text](image-11.png)
+![alt text](/6.TS/images/image-11.png)
 
 ## Contructors:
 
@@ -130,11 +130,11 @@ private:
 - Key points to remember **include the constructors, name, initialization of properties and the possibility of using multiple constructors**.
 - Additionally, the super keyword is often employed
 
-![alt text](image-12.png)
+![alt text](/6.TS/images/image-12.png)
 
-![alt text](image-13.png)
+![alt text](/6.TS/images/image-13.png)
 
-![alt text](image-14.png)
+![alt text](/6.TS/images/image-14.png)
 
 ## Promises:
 
@@ -149,7 +149,7 @@ they are successful or result in an error.
 - TypeScript enhances the safety of promises by allowing you to specify the type of data that will resolve
 to.
 
-![alt text](image-15.png)
+![alt text](/6.TS/images/image-15.png)
 
 2. Các trạng thái của một Promise:
 
@@ -195,5 +195,5 @@ Thao tác bất đồng bộ dùng async (TypeScript tự. động hiểu kiểu
 - Từ khóa await chỉ được phép sử dụng bên trong hàm có từ khóa `async`.
 - Nó dùng để tạm dừng thực thi hàm async cho đến khi Promise phía sau nó được xử lý xong (lấy ra giá trị từ trạng thái *Fulfilled* hoặc ném ra lỗi từ trạng thái *Rejected*).
 
-![alt text](image-16.png)
+![alt text](/6.TS/images/image-16.png)
 
