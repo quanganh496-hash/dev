@@ -116,7 +116,7 @@ and more.
 - In addition to these files, you will also have an app module file, typically named`App.module.ts`, that serves as the main entry point for your angular application.
 - The app module imports and configures all the components, services, and modules required for your application to function correctly.
 
-![alt text](image.png)
+![alt text](/7.%20Angular16/images/image.png)
 
 # Interpolation:
 
@@ -132,11 +132,11 @@ and more.
 
 - `ngFor` (hoặc đầy đủ là *ngFor) là một Structural Directive trong Angular dùng để lặp qua một danh sách (mảng) dữ liệu và lặp lại cấu trúc của một phần tử HTML cho từng mục trong danh sách đó.
 
-![alt text](image-1.png)
+![alt text](/7.%20Angular16/images/image-1.png)
 
 - `ngIf` (hay đầy đủ là *ngIf) kèm theo `else` là Structural Directive trong Angular dùng để kiểm tra điều kiện logic. Nếu điều kiện đúng (`true`), Angular sẽ hiển thị khối HTML hiện tại. Nếu điều kiện sai (false), Angular sẽ hiển thị một khối HTML thay thế được chỉ định qua từ khóa `else`.
 
-![alt text](image-2.png)
+![alt text](/7.%20Angular16/images/image-2.png)
 
 - `ngSwitch` là một Attribute Directive trong Angular, hoạt động kết hợp với hai Structural Directives là `*ngSwitchCase` và `*ngSwitchDefault`. Cấu trúc này hoạt động hoàn toàn giống như câu lệnh switch-case trong các ngôn ngữ lập trình, giúp bạn hiển thị một khối HTML phù hợp nhất trong số nhiều lựa chọn dựa trên giá trị của một biểu thức.
 
@@ -170,9 +170,9 @@ and more.
 </div>
 ```
 
-![alt text](image-3.png)
+![alt text](/7.%20Angular16/images/image-3.png)
 
-![alt text](image-4.png)
+![alt text](/7.%20Angular16/images/image-4.png)
 
 # Routing:
 
@@ -367,7 +367,7 @@ export class ParentComponent {
 
 4. Tương tác giữa các Component bất kỳ (Shared Service)
 
-Khi hai hoặc nhiều component nằm ở các nhánh khác nhau (không có quan hệ cha-con trực tiếp) cần đồng bộ dữ liệu liên tục, giải pháp tối ưu là sử dụng một Service trung gian kết hợp với RxJS BehaviorSubject hoặc **Signals** (từ Angular 16+)
+Khi hai hoặc nhiều component nằm ở các nhánh khác nhau (không có quan hệ cha-con trực tiếp) cần đồng bộ dữ liệu liên tục, giải pháp tối ưu là sử dụng một Service trung gian kết hợp với RxJS **BehaviorSubject** hoặc **Signals** (từ Angular 16+)
 
 - .Tạo Service trung gian (data.service.ts):
 
@@ -465,7 +465,7 @@ observableNguon.pipe(
 ).subscribe(data => console.log(data));
 ```
 
-2. Toán tử `filter` trong RxJS (được sử dụng bên trong hàm .pipe()) là một toán tử lọc dữ liệu (Filtering Operator). Nó hoạt động dựa trên một điều kiện do bạn đưa ra (hàm điều kiện trả về `true` hoặc `false`).
+2. Toán tử `filter` trong RxJS (được sử dụng bên trong hàm `.pipe()`) là một toán tử lọc dữ liệu (Filtering Operator). Nó hoạt động dựa trên một điều kiện do bạn đưa ra (hàm điều kiện trả về `true` hoặc `false`).
 
 - Nếu điều kiện là `true`: Dữ liệu được phép đi qua và truyền tiếp xuống cho người đăng ký (subscribe).
 - Nếu điều kiện là `false`: Dữ liệu bị chặn lại ngay lập tức và không phát ra ngoài.
@@ -480,14 +480,14 @@ observableNguon.pipe(
 ```
 ## Subject:
 
-Trong RxJS, Subject là một loại Observable đặc biệt. Điểm độc đáo của nó là vừa đóng vai trò là một Observable (để truyền dữ liệu cho người khác nghe), vừa đóng vai trò là một Observer (có thể tự phát ra dữ liệu mới bằng hàm .next()).
+Trong RxJS, Subject là một loại Observable đặc biệt. Điểm độc đáo của nó là vừa đóng vai trò là một Observable (để truyền dữ liệu cho người khác nghe), vừa đóng vai trò là một Observer (có thể tự phát ra dữ liệu mới bằng hàm `.next()`).
 
 Nếu một Observable thông thường giống như một kênh xem phim Netflix (mỗi người bấm xem sẽ xem từ đầu, độc lập nhau), thì Subject giống như một rạp chiếu phim ngoài đời hoặc một buổi Livestream (ai vào muộn sẽ chỉ xem được đoạn đang phát, mọi người cùng xem chung một nội dung tại một thời điểm).
 
 1. Đặc điểm cốt lõi của Subject
-- Tính chất Multicast (Phát đa hướng): Một Subject có thể chia sẻ cùng một luồng dữ liệu cho nhiều người đăng ký (subscribe) cùng lúc. Khi Subject phát ra dữ liệu, tất cả người nghe đều nhận được giá trị giống nhau.
-- Có khả năng chủ động phát dữ liệu: Bạn có thể gọi `subject.next(gia_tri)` ở bất kỳ đâu trong code để đẩy một dữ liệu mới vào luồng.
-- Không lưu lại lịch sử (đối với Subject cơ bản): Những ai `subscribe` sau khi dữ liệu đã phát sẽ không nhận được các giá trị cũ trước đó.
+- **Tính chất Multicast (Phát đa hướng)**: Một Subject có thể chia sẻ cùng một luồng dữ liệu cho nhiều người đăng ký (subscribe) cùng lúc. Khi Subject phát ra dữ liệu, tất cả người nghe đều nhận được giá trị giống nhau.
+- **Có khả năng chủ động phát dữ liệu**: Bạn có thể gọi `subject.next(gia_tri)` ở bất kỳ đâu trong code để đẩy một dữ liệu mới vào luồng.
+- **Không lưu lại lịch sử (đối với Subject cơ bản)**: Những ai `subscribe` sau khi dữ liệu đã phát sẽ không nhận được các giá trị cũ trước đó.
 
 2. Cách dùng cơ bản:
 ```
