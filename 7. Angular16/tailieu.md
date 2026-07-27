@@ -68,7 +68,7 @@ enviroment:
 
 - Nó thường nhập mô-đun ứng dụng sẽ là mô-đun gốc của ứng dụng của bạn.
 
-- Nó cũng gọi hàm bootstrap của nền tảng góc để khởi động ứng dụng.
+- Nó cũng gọi hàm bootstrap của nền tảng Angular để khởi động ứng dụng.
 
 8. `Styles.css`:
 
@@ -394,6 +394,52 @@ export class DataService {
 - `Component`: Đây là một decorator được sử dụng để xác định một component trong Angular. Component là các phần tử cơ bản tạo ra giao diện trong ứng dụng Angular. Mỗi component có thể có logic riêng và quản lý phần giao diện và hành vi của một phần giao diện người dùng.
 - `EventEmitter`: Đây là một lớp được sử dụng để phát đi các sự kiện từ một component. Nó cho phép bạn gửi dữ liệu từ một component này sang một component khác, giúp kiểm soát và tương tác giữa chúng. EventEmitter rất hữu ích trong việc xử lý dữ liệu khi có sự kiện xảy ra (ví dụ: nút được nhấn).
 - `@Output`: Đây là một decorator được sử dụng để chỉ định rằng một thuộc tính sẽ phát đi một sự kiện ra ngoài component. Nó cho phép các component con thông báo cho các component cha hoặc các component khác về các hành động hoặc thay đổi bên trong của chúng.
+
+# Snapshot:
+
+`snapshot` thường được hiểu là **ActivatedRouteSnapshot**. Đây là một đối tượng tĩnh (ảnh chụp nhanh) cung cấp trạng thái hiện tại của một route tại thời điểm thành phần được tạo, bao gồm các tham số URL, query parameter và dữ liệu truyền vào.
+
+Dưới đây là cách sử dụng và các khái niệm cốt lõi của snapshot:
+
+1. Cách truy cập dữ liệu qua Snapshot
+
+Bạn inject `ActivatedRoute` vào trong component và truy cập thuộc tính `.snapshot`
+
+```import { Component, OnInit, inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+@Component({
+  selector: 'app-chi-tiet',
+  template: `...`
+})
+export class ChiTietComponent implements OnInit {
+  private route = inject(ActivatedRoute);
+
+  ngOnInit() {
+    // 1. Lấy Route Parameter (ví dụ: /chi-tiet/:id)
+    const id = this.route.snapshot.paramMap.get('id');
+
+    // 2. Lấy Query Parameter (ví dụ: /chi-tiet?search= angular)
+    const search = this.route.snapshot.queryParamMap.get('search');
+    
+    // 3. Lấy Data được truyền trực tiếp qua route (ví dụ: title)
+    const title = this.route.snapshot.data['title'];
+  }
+}
+```
+
+2. Sự khác biệt: Snapshot vs Observable
+
+- Snapshot (.snapshot): Lấy giá trị một lần duy nhất tại thời điểm component khởi tạo.
+- Observable (ví dụ: .paramMap.subscribe()): Lắng nghe liên tục. Nếu người dùng thay đổi tham số (ví dụ: bấm một nút link sang một ID khác nhưng dùng chung một component), dữ liệu sẽ tự động cập nhật mà không cần load lại trang.
+
+3. Khi nào nên dùng Snapshot?
+- Sử dụng snapshot khi bạn biết chắc chắn rằng component sẽ luôn bị huỷ và khởi tạo lại mỗi khi người dùng thay đổi đường dẫn hoặc tham số trên URL.
+- Nó giúp code ngắn gọn, dễ đọc, không cần phải quản lý việc hủy đăng ký (unsubscribe).
+
+4. Hạn chế
+- Nếu component vẫn đang hiển thị trên màn hình (không bị hủy) và URL chỉ thay đổi phần queryParams, snapshot sẽ không tự cập nhật. Trong trường hợp đó, bạn bắt buộc phải dùng Observable.
+
 
 # RxJS:
 
