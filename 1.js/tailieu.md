@@ -263,13 +263,8 @@ ex:
 
 ![alt text](image-38.png)
 
-## Toán tử ba ngôi (Ternary Operator):
 
-1. Cú pháp tổng quát:
-
-       Biểu_thức_điều_kiện ? Giá_trị_khi_đúng : Dạng_trả_về_khi_sai;
-
-## 4.9 Data Tyres:
+## 4.8 Data Tyres:
 
 ![alt text](image-37.png)
 
