@@ -1,16 +1,20 @@
+![alt text](image.png)
+
+![alt text](image-1.png)
+
 # Structure:
 
 1. đầu tiên chúng ta có angular web.
 
-- angular đầu tiên sử dụng webpack để gói mô-đun và xây dựng ứng dụng.
+- angular đầu tiên sử dụng **webpack** để gói mô-đun và xây dựng ứng dụng.
 
-- Webpack là một công cụ mạnh mẽ giúp quản lý và gói tất cả các tài sản của ứng dụng, bao gồm Các tệp JavaScript, CSS và HTML.
+- **Webpack** là một công cụ mạnh mẽ giúp quản lý và gói tất cả các tài sản của ứng dụng, bao gồm Các tệp JavaScript, CSS và HTML.
 
 - Nó tối ưu hóa mã và chuẩn bị cho việc triển khai.
 
-2. Babel-webpack
+2. **Babel-webpack**
 
-- Babel là một trình biên dịch JavaScript cho phép các nhà phát triển viết mã JavaScript hiện đại và chuyển đổi nó thành các phiên bản tương thích ngược có thể chạy trong các trình duyệt cũ hơn.
+- **Babel** là một trình biên dịch JavaScript cho phép các nhà phát triển viết mã JavaScript hiện đại và chuyển đổi nó thành các phiên bản tương thích ngược có thể chạy trong các trình duyệt cũ hơn.
 
 - Nó thường được sử dụng cùng với các dự án Webpack và Angular để chuyển mã và đảm bảo trình duyệt chéo khả năng tương thích.
 
@@ -20,7 +24,7 @@
 
 - VS code cung cấp một loạt các tính năng và tiện ích mở rộng giúp nâng cao trải nghiệm phát triển, chẳng hạn như:
 
-  - Công cụ tô sáng cú pháp, hoàn thành mã và gỡ lỗi.
+- Công cụ tô sáng cú pháp, hoàn thành mã và gỡ lỗi.
 
 4. Node modul:
 
@@ -42,25 +46,25 @@
 - Các thành phần đại diện cho các phần khác nhau của giao diện người dùng, trong khi các dịch vụ xử lý logic kinh doanh và Thao tác dữ liệu.
 
 
-asset ( tài sản ):
+6. asset:
 
 - Vì vậy, thư mục con này được sử dụng để lưu trữ các tài sản tĩnh như hình ảnh, phông chữ hoặc các tệp khác được yêu cầu của mình.
 
 - Các tài sản này có thể được tham chiếu và tải trong các thành phần(components) và mẫu(templates) của bạn.
 
-enviroment:
+7. enviroment:
 
 - It contains environment specific configuration files such as environment dot products and environments which store variables used in different environments.
 - Example production and deployment.
 - You can specify different settings such as API endpoints or feature flags for each environment. There can be other custom folders that you may create based on your project's needs.
 
-6. Index.html.
+8. `Index.htmlI`.
 - sixth thing we have is the `index.html` file, which is the main entry point of your angular application.
 - It serves as the initial HTML document that gets loaded in the browser.
 - You can include the necessary meta tags, script references and angular app root component selector in this file.
 - The angular application is dynamically loaded into a designated HTML element within this file.
 
-7. `main.ts`:
+9. `main.ts`:
 
 - là điểm khởi đầu của ứng dụng Angular của bạn.
 
@@ -70,37 +74,37 @@ enviroment:
 
 - Nó cũng gọi hàm bootstrap của nền tảng Angular để khởi động ứng dụng.
 
-8. `Styles.css`:
+10. `Styles.css`:
 
 - The `styles.css` file is the global stylesheet for your application Any styles defined in this file will be applied globally to your entire application.
 - You can define custom CSS rules or override default styles that would be provided by angular or third party libraries. It basically allows you to define the overall look and feel of your application.
 
-9. the `Angular.json` file is the configuration file for your angular project.
+11. `Angular.json` file is the configuration file for your angular project.
 - It contains various settings and options related to the building process, asset path, project structure,
 and more.
 - It's used to customize and fine tune your project's behavior.
 - You can configure options in this file like build outputs, file replacements, and asset management.
 
-10. `package.json`:
+12. `package.json`:
 - the `package.json` file which is a crucial file in any Node.js project including angular projects.
 - It's a file that lists all of the project's dependencies and their versions.
 - It also includes scripts for running tasks such as building the application, running tests, or starting a development server.
 - NPM, which stands for Node Package Manager, also uses this file to manage and install project dependencies.
 
-11. TypeScript configuration.
+13. `Tsconfig.json`.
 
 - the TypeScript configuration files, such as `Tsconfig.json` that specify the compiler options and settings for the TypeScript compiler.
 - They define how the TypeScript code is compiled into JavaScript, and allow for the customization of various compilation related features.
 - You can configure target versions, module systems, and other options in these files.
 
-12. `App.json` and `package.json`.
+14. `App.json` and `package.json`.
 
 - I would like to clarify something here because it seems there might be some confusion. So in a typical angular project you won't have `App.json` or `RSpec` The Json files.
 - These files are not a part of the default angular folder structure.
 - However, it's possible that they become custom files that are specific to your project. Or maybe it's a typo in the names.
 
 # Create new components:
-
+![alt text](image-2.png)
 1 số file làm vc cùng:
 
 1. Component.TypeScript.(.ts) file.
@@ -116,17 +120,60 @@ and more.
 - In addition to these files, you will also have an app module file, typically named`App.module.ts`, that serves as the main entry point for your angular application.
 - The app module imports and configures all the components, services, and modules required for your application to function correctly.
 
+
+       ng g c name-component
+
 ![alt text](/7.%20Angular16/images/image.png)
 
 # Interpolation:
+
+- Data binding is a technique, where the data stays in sync between the component and the view
+
+- When the data flows in one direction, we have one way data binding. So for example, from the view to the TypeScript class or from the TypeScript class to the view.
+- When the data flows in both directions We have two way data binding and when the data is passed using an event such as a click event, then
+we have event binding.
+
+- Simples way of passing data from a typescript class to a view (one-way data binding)
 
 - It allows you to display and update data in the template based on values stored in the component.
 
 - In the components HTML template, we use interpolation by wrapping the property names in double curly brackets.`{{ }}`
 
+![alt text](image-4.png)
+
+![alt text](image-6.png)
+
+# 
+
+- Pipes transform strings, currency amounts, dates and other data for display
+
+![alt text](image-7.png)
+
+![alt text](image-8.png)
+
+# Property Binding
+- By using property binding, you can pass data in one direction way from a component to the template. But instead of just showing the data in the interpolation case, the property binding is used to set the value to property in an HTML element to bind to an element's property and close it in square brackets`[]`, which identifies the property as the target property.
+- You can use property binding to set a value to an
+HTML element property
+
+# Event Binding
+
+- To bind to an event. You use the angular event binding syntax.
+In event binding, you need to define the event name in parentheses and the method name or the function that you want to call when the event is triggered.
+
+
+      < button (click)="onClickCallThisFn()"> Click me </button >
+
+# Two-way Binding
+- Data flow is bi-directional, from typescript class to the template and vice-versa.
+- The two way data binding passes data in a bidirectional way, which means that data is passed from a view to a component and from the component to a view at the same time.
+- This way of binding data is really useful to build dynamic and interactive web applications.
+
+![alt text](image-9.png)
+
 # Modules:
 
-- Module trong Angular (gọi là NgModule) là các khối đóng gói logic được dùng để gom nhóm các thành phần liên quan lại với nhau. Chúng giúp tổ chức mã nguồn sạch sẽ, quản lý các phụ thuộc (dependencies) hiệu quả và hỗ trợ kỹ thuật Tải lười (Lazy-loading) để tối ưu hiệu năng ứng dụng
+- Module trong Angular (gọi là NgModule) là các khối đóng gói logic được dùng để gom nhóm các component liên quan lại với nhau. Chúng giúp tổ chức mã nguồn sạch sẽ, quản lý các phụ thuộc (dependencies) hiệu quả và hỗ trợ kỹ thuật Tải lười (Lazy-loading) để tối ưu hiệu năng ứng dụng
 
 # Directives:
 
@@ -395,6 +442,60 @@ export class DataService {
 - `EventEmitter`: Đây là một lớp được sử dụng để phát đi các sự kiện từ một component. Nó cho phép bạn gửi dữ liệu từ một component này sang một component khác, giúp kiểm soát và tương tác giữa chúng. EventEmitter rất hữu ích trong việc xử lý dữ liệu khi có sự kiện xảy ra (ví dụ: nút được nhấn).
 - `@Output`: Đây là một decorator được sử dụng để chỉ định rằng một thuộc tính sẽ phát đi một sự kiện ra ngoài component. Nó cho phép các component con thông báo cho các component cha hoặc các component khác về các hành động hoặc thay đổi bên trong của chúng.
 
+## Component life-cycle:
+
+- A component in science has a lifecycle that starts when Angular initiates the component class and renders the component view along with its child views. And it ends when Angular destroys the component instance and removes its render template from the top.
+
+- Lifecycle hooks are a special functionality in Angular that allow us to "hook into" and run code at a specific lifecycle event of a component or directive.
+
+- Each interface defines a single hook method, whose name is the interface name prefixed with ng
+
+      ngInterfaceName
+
+     
+      OnInit interface = ngOnInit
+
+
+- Angular has eight important lifecycle hook interfaces which can be categorized based on the component
+type.
+
+![alt text](image-3.png)
+
+- Angular Lifecycle Order:
+1. ngOnChanges: 
+   - Công dụng: Theo dõi sự thay đổi của các thuộc tính @Input.
+   - Chi tiết: Nhận vào một đối tượng SimpleChanges chứa giá trị cũ và mới của biến truyền từ cha vào con.
+   - Runs when input values change.
+2. ngOnInit:
+   - Công dụng: Khởi tạo dữ liệu cho component.
+   - Chi tiết: Nơi lý tưởng để gọi API (HTTP requests) và thiết lập các biến ban đầu.
+   - Runs once after the first data-bound properties are checked.
+
+3. ngDoCheck: 
+   - Công dụng: Tự tùy biến cơ chế kiểm tra thay đổi (Change Detection).
+   - Chi tiết: Chạy liên tục để bắt các thay đổi mà Angular không tự nhận biết được (ví dụ: thay đổi sâu bên trong mảng hoặc object).
+   - Runs during every change detection run.
+4. ngAfterContentInit: 
+   - Công dụng: Xử lý sau khi nội dung bên ngoài được nhúng vào. component. 
+   - Chi tiết: Chạy một lần duy nhất sau khi nội dung nằm giữa cặp thẻ. `<ng-content>` được nạp xong.
+   - Runs once after content is projected into the component.
+5. ngAfterContentChecked: 
+   - Công dụng: Kiểm tra lại nội dung được nhúng vào.
+   - Chi tiết: Chạy sau mỗi lần hệ thống kiểm tra sự thay đổi của phần nội dung `<ng-content>`.
+   - Runs after projected content is checked.
+6. ngAfterViewInit: 
+   - Công dụng: Thao tác với giao diện (DOM) của component và con của nó.
+   - Chi tiết: Chạy một lần duy nhất khi toàn bộ giao diện đã dựng xong. Thường dùng để tích hợp các thư viện bên thứ ba cần can thiệp DOM.
+   - Runs once after the component's view and child views are initialized.
+7. ngAfterViewChecked: 
+   - Công dụng: Kiểm tra lại giao diện sau khi cập nhật.
+   - Chi tiết: Chạy sau mỗi lần hệ thống quét và cập nhật lại giao diện hiển thị của component.
+   - Runs after the component's view and child views are checked.
+8. ngOnDestroy: 
+   - Công dụng: Dọn dẹp bộ nhớ trước khi component bị xóa khỏi màn hình.
+   - Chi tiết: Hủy các kết nối (unsubscribe Observable), xóa bộ đếm thời gian (clearInterval) để tránh rò rỉ bộ nhớ (memory leak).
+   - Runs just before Angular destroys the component.
+
 # Snapshot:
 
 `snapshot` thường được hiểu là **ActivatedRouteSnapshot**. Đây là một đối tượng tĩnh (ảnh chụp nhanh) cung cấp trạng thái hiện tại của một route tại thời điểm thành phần được tạo, bao gồm các tham số URL, query parameter và dữ liệu truyền vào.
@@ -443,61 +544,74 @@ export class ChiTietComponent implements OnInit {
 
 # RxJS:
 
-1. RxJS, which stands for Reactive Extensions for JavaScript, is a powerful library for handling asynchronous programming in JavaScript applications, especially in Angular. Here’s a simple explanation of its main components:
-- `Observables`: At the core of RxJS are observables, which represent streams of data that can be observed over time. These streams can emit values at any point, allowing developers to react to changing data.
-- `Operators`: RxJS includes a variety of operators that allow developers to manipulate and transform data streams efficiently. For instance, operators like map, filter, and mergeMap enable you to modify data and manage how it flows through your application.
-- `Subscriptions`: To use an observable, you need to subscribe to it. A subscription is a way to execute the observable and receive notifications whenever it emits new values or encounters errors.
-- `Event Handling`: RxJS facilitates event handling in Angular applications by allowing the creation of observable streams from user interactions (like clicks or keystrokes). This helps in dynamically updating the user interface in response to these events.
-- `Reactive Programming`: Overall, RxJS promotes a reactive programming model, making it easier for developers to create applications that respond to changing data over time.
+1. RxJS, viết tắt của **Reactive Extensions for JavaScript**, là một thư viện mạnh mẽ để xử lý lập trình bất đồng bộ trong các ứng dụng JavaScript, đặc biệt là trong Angular. Dưới đây là giải thích đơn giản về các thành phần chính của nó:
+- `Observables`: Cốt lõi của RxJS là các observables, đại diện cho các luồng dữ liệu có thể được quan sát theo thời gian. Các luồng này có thể phát ra giá trị tại bất kỳ thời điểm nào, cho phép các nhà phát triển phản ứng với dữ liệu thay đổi.
+- `Operators`: RxJS bao gồm nhiều toán tử cho phép các nhà phát triển thao tác và chuyển đổi các luồng dữ liệu một cách hiệu quả. Ví dụ, các toán tử như map, filter và mergeMap cho phép bạn sửa đổi dữ liệu và quản lý cách dữ liệu chảy qua ứng dụng của bạn.
+- `Subscriptions`: Để sử dụng một observable, bạn cần đăng ký nó. Đăng ký là một cách để thực thi observable và nhận thông báo bất cứ khi nào nó phát ra giá trị mới hoặc gặp lỗi.
+- `Event Handling`: RxJS tạo điều kiện thuận lợi cho việc xử lý sự kiện trong các ứng dụng Angular bằng cách cho phép tạo các luồng observable từ các tương tác của người dùng (như nhấp chuột hoặc nhấn phím). Điều này giúp cập nhật giao diện người dùng một cách linh hoạt để phản hồi các sự kiện này.
 
-By leveraging these features, developers can build more responsive and efficient applications, making RxJS a valuable tool in Angular development.
-Was this content relevant to you?
+- `Lập trình phản ứng`: Nhìn chung, RxJS thúc đẩy mô hình lập trình phản ứng, giúp các nhà phát triển dễ dàng tạo ra các ứng dụng phản hồi với dữ liệu thay đổi theo thời gian.
 
-2. Using RxJS in Angular applications offers several crucial benefits:
+Bằng cách tận dụng các tính năng này, các nhà phát triển có thể xây dựng các ứng dụng phản hồi nhanh và hiệu quả hơn, biến RxJS trở thành một công cụ có giá trị trong phát triển Angular.
 
-- `Handling Asynchronous Operations`: Angular applications often require fetching data from servers, which involves asynchronous tasks. RxJS simplifies this process by providing tools like observables to handle these operations consistently and manageably, resulting in cleaner and more maintainable code.
-- `Event Handling and UI Updates`: Interactive web applications need to respond to user events like button clicks or mouse movements. RxJS allows developers to create observable streams from these events, enabling dynamic UI updates in response to user interactions.
-- `Data Transformation and Manipulation`: RxJS provides a wide variety of operators that facilitate data transformation and manipulation within observables. For example, operators like map, filter, and mergeMap help modify data streams and apply conditional logic, making data processing efficient and concise.
-- `Reactive Programming Paradigm`: By using RxJS, developers can adopt a reactive programming model, which enhances the responsiveness of applications to data changes over time, ultimately leading to a more engaging user experience.
+Nội dung này có liên quan đến bạn không?
 
-In summary, RxJS empowers developers to create more responsive, efficient, and manageable Angular applications by effectively handling asynchronous operations, managing events, and transforming data streams.
-Was this content relevant to you?
+2. Sử dụng RxJS trong các ứng dụng Angular mang lại một số lợi ích quan trọng:
+
+- `Xử lý các thao tác bất đồng bộ`: Các ứng dụng Angular thường yêu cầu lấy dữ liệu từ máy chủ, liên quan đến các tác vụ bất đồng bộ. RxJS đơn giản hóa quá trình này bằng cách cung cấp các công cụ như observable để xử lý các thao tác này một cách nhất quán và dễ quản lý, dẫn đến mã sạch hơn và dễ bảo trì hơn.
+
+- `Xử lý sự kiện và cập nhật giao diện người dùng`: Các ứng dụng web tương tác cần phản hồi các sự kiện của người dùng như nhấp chuột hoặc di chuyển chuột. RxJS cho phép các nhà phát triển tạo luồng observable từ các sự kiện này, cho phép cập nhật giao diện người dùng động để phản hồi các tương tác của người dùng.
+- `Chuyển đổi và thao tác dữ liệu`: RxJS cung cấp nhiều toán tử giúp chuyển đổi và thao tác dữ liệu trong các observable. Ví dụ, các toán tử như map, filter và mergeMap giúp sửa đổi luồng dữ liệu và áp dụng logic điều kiện, giúp xử lý dữ liệu hiệu quả và ngắn gọn.
+
+- `Mô hình lập trình phản ứng`: Bằng cách sử dụng RxJS, các nhà phát triển có thể áp dụng mô hình lập trình phản ứng, giúp tăng cường khả năng phản hồi của ứng dụng đối với các thay đổi dữ liệu theo thời gian, cuối cùng dẫn đến trải nghiệm người dùng hấp dẫn hơn.
+
+Tóm lại, RxJS giúp các nhà phát triển tạo ra các ứng dụng Angular phản hồi nhanh hơn, hiệu quả hơn và dễ quản lý hơn bằng cách xử lý hiệu quả các hoạt động bất đồng bộ, quản lý sự kiện và chuyển đổi luồng dữ liệu.
+
 
 ## Promises:
 
-1. A Promise in JavaScript is a way to handle asynchronous operations and represents a value that may be available now, or in the future, or never. Here's a simple breakdown of its key concepts:
+1. Promise trong JavaScript là một cách để xử lý các thao tác bất đồng bộ và đại diện cho một giá trị có thể có sẵn ngay bây giờ, trong tương lai hoặc không bao giờ. Dưới đây là một phân tích đơn giản về các khái niệm chính của nó:
 
-- States: A Promise can be in one of three states:
-   - Pending: The initial state, meaning the Promise is still waiting for a result.
-   - Fulfilled: The operation completed successfully, resulting in a resolved value.
-   - Rejected: The operation failed, resulting in an error.
+- Trạng thái: Một Promise có thể ở một trong ba trạng thái:
 
-2. Using Promises:
+  - Đang chờ: Trạng thái ban đầu, nghĩa là Promise vẫn đang chờ kết quả.
 
-- When a Promise is created, it takes a function (executor) that contains two functions: `resolve` and `reject`. The `resolve` function is called when the operation is successful, while `reject` is called when there is an error.
+  - Đã hoàn thành: Thao tác đã hoàn thành thành công, dẫn đến một giá trị đã được giải quyết.
 
-- You can handle the results of a Promise using the `.then()` method for resolved values and `.catch()` for errors.
+  - Bị từ chối: Thao tác đã thất bại, dẫn đến một lỗi.
 
-Example:
+2. Sử dụng Promises:
 
-- If you're making an HTTP request, you might create a Promise that attempts to fetch data. If the data is successfully fetched, the Promise is resolved. If there’s an error (like a network issue), the Promise is rejected.
-- Error Handling: The .catch() method allows you to handle errors gracefully when a Promise is rejected, ensuring your application can respond to failures appropriately.
+- Khi một Promise được tạo, nó nhận một hàm (executor) chứa hai hàm: `resolve` và `reject`. Hàm `resolve` được gọi khi thao tác thành công, trong khi `reject` được gọi khi có lỗi.
+
+- Bạn có thể xử lý kết quả của một Promise bằng cách sử dụng phương thức `.then()` cho các giá trị đã được giải quyết và `.catch()` cho các lỗi.
+
+Ví dụ:
+
+- Nếu bạn đang thực hiện một yêu cầu HTTP, bạn có thể tạo một Promise để cố gắng lấy dữ liệu. Nếu dữ liệu được lấy thành công, Promise sẽ được giải quyết. Nếu có lỗi (như sự cố mạng), Promise sẽ bị từ chối.
+
+- Xử lý lỗi: Phương thức. `catch()` cho phép bạn xử lý lỗi một cách khéo léo khi một Promise bị từ chối, đảm bảo ứng dụng của bạn có thể phản hồi các lỗi một cách thích hợp.
 
 ## Observables:
 
-1. Observable is a core concept in RxJS and plays a vital role in reactive programming. Here’s a breakdown of what observables are:
-- Definition: An observable is a programming construct that allows you to manage asynchronous data streams. It provides a way to observe changes in data over time, enabling developers to react to those changes dynamically.
-- Data Streams: Observables can emit multiple values over time, representing a continuous stream of data. This is especially useful for handling events such as user interactions, HTTP requests, or timers.
-- Observer Pattern: Observables work on the observer pattern, where one or more observers subscribe to an observable to receive notifications when new data is emitted. Each observer gets notified whenever there is a change, allowing for real-time updates in applications.
+1. Observable là một khái niệm cốt lõi trong RxJS và đóng vai trò quan trọng trong lập trình phản ứng. 
+- Định nghĩa: Observable là một cấu trúc lập trình cho phép bạn quản lý các luồng dữ liệu bất đồng bộ. Nó cung cấp một cách để quan sát các thay đổi trong dữ liệu theo thời gian, cho phép các nhà phát triển phản ứng với những thay đổi đó một cách linh hoạt.
 
-Key Functions:
+- Luồng dữ liệu: Observable có thể phát ra nhiều giá trị theo thời gian, đại diện cho một luồng dữ liệu liên tục. Điều này đặc biệt hữu ích để xử lý các sự kiện như tương tác người dùng, yêu cầu HTTP hoặc bộ hẹn giờ.
 
-- Next: Used to send data to subscribers.
-- Error: Notifies subscribers if an error occurs during the data stream.
-- Complete: Indicates that the observable has finished sending data.
-- Usage: Observables are particularly beneficial in Angular applications for managing data flows, making it easier to handle asynchronous operations and improve application responsiveness.
+- Mẫu Observer: Observable hoạt động dựa trên mẫu Observer, trong đó một hoặc nhiều observer đăng ký vào một observable để nhận thông báo khi dữ liệu mới được phát ra. Mỗi observer sẽ được thông báo bất cứ khi nào có sự thay đổi, cho phép cập nhật theo thời gian thực trong các ứng dụng.
 
-In summary, observables serve as a powerful tool in reactive programming, allowing for the seamless observation and management of data streams and events in a flexible and efficient manner.
+- Các chức năng chính:
+
+   - **Next**: Được sử dụng để gửi dữ liệu đến các observer.
+
+   - **Error**: Thông báo cho các observer nếu xảy ra lỗi. trong quá trình truyền dữ liệu.
+
+   - **Complete**: Cho biết observable đã hoàn thành việc gửi dữ liệu.
+
+   - **Cách sử dụng**: Observables đặc biệt hữu ích trong các ứng dụng Angular để quản lý luồng dữ liệu, giúp dễ dàng xử lý các thao tác bất đồng bộ và cải thiện khả năng phản hồi của ứng dụng.
+
+Tóm lại, observables đóng vai trò là một công cụ mạnh mẽ trong lập trình phản ứng, cho phép quan sát và quản lý liền mạch các luồng dữ liệu và sự kiện một cách linh hoạt và hiệu quả..
 
 ## Operators:
 

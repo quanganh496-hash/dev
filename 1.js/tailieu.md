@@ -219,7 +219,7 @@ ex:
 
 ![alt text](/1.js/image/image-14.png)
 
-### 4.2 Mỗi câu nằm trên 1 dòng riêng:
+## 4.2 Mỗi câu nằm trên 1 dòng riêng:
 
 ![alt text](/1.js/image/image-15.png)
 
