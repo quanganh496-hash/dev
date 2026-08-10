@@ -398,12 +398,14 @@ to:
 
 ![alt text](image-28.png)
 
-# 13. toString() and fill method?
+# 13. toString() and fill() method?
 
 `.toString(base)` để chuyển số sang chuỗi 
 
 
 ![alt text](image-75.png)
+
+`.fill(base)` = điền cùng một giá trị vào nhiều ô.
 
 ![alt text](image-76.png)
 
