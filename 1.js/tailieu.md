@@ -115,14 +115,40 @@ ex:
 
 ## 3.4 slice and splice method:
 
+Hàm `slice()` - Sao chép mảng : trích xuất một phần của mảng và trả về một mảng mới. Nó hoạt động giống như việc bạn chụp ảnh lại một phần của mảng.
+- Cú pháp: array.slice(start, end)
 
-![alt text](image-66.png)
+   - start: Vị trí bắt đầu lấy (tính từ 0, mặc định là 0).
+   - end (Không bắt buộc): Vị trí dừng lại (lấy đến trước end, không bao gồm phần tử tại vị trí end). Nếu bỏ trống, hàm lấy đến hết mảng.
 
-- `slice` delete the number of value from the first position onwards.
+```
+const hardware = ['CPU', 'RAM', 'SSD', 'GPU', 'PSU'];
 
-![alt text](image-65.png)
+// Lấy từ index 1 đến sát index 4 (lấy index 1, 2, 3)
+const subArr = hardware.slice(1, 4); 
 
-- `splice` adds the value in the position we want.
+console.log(subArr);    // Kết quả: ['RAM', 'SSD', 'GPU']
+console.log(hardware);  // Kết quả mảng gốc giữ nguyên: ['CPU', 'RAM', 'SSD', 'GPU', 'PSU']
+
+// Mẹo: Không truyền tham số để copy toàn bộ mảng gốc
+const cloneArr = hardware.slice(); // ['CPU', 'RAM', 'SSD', 'GPU', 'PSU']
+```
+
+`Hàm splice()` - Sửa đổi mảng: can thiệp và làm thay đổi trực tiếp mảng hiện tại bằng cách xóa phần tử cũ hoặc chèn phần tử mới vào.
+- Cú pháp: array.splice(start, deleteCount, item1, item2, ...)
+   - `start`: Vị trí bắt đầu thay đổi.
+   - `deleteCount` (Không bắt buộc): Số lượng phần tử muốn xóa tính từ vị trí start. Nếu bằng 0, không có phần tử nào bị xóa.
+   - `item1`, `item2`, ... (Không bắt buộc): Các phần tử mới muốn thêm vào mảng tại vị trí `start`.
+
+``` 
+const fruits = ['Táo', 'Chuối', 'Cam', 'Xoài'];
+
+// Xóa 2 phần tử tính từ index 1 (Xóa 'Chuối' và 'Cam')
+const deleted = fruits.splice(1, 2); 
+
+console.log(deleted); // Kết quả phần tử bị xóa: ['Chuối', 'Cam']
+console.log(fruits);  // Mảng gốc đã bị thay đổi: ['Táo', 'Xoài']
+```
 
 ## 3.5 isarray method:
 
