@@ -194,9 +194,9 @@ console.log(fruits);  // Mảng gốc đã bị thay đổi: ['Táo', 'Xoài']
 
 ## 3.11 find and findindex method:
 
-![alt text](image-86.png)
+![alt text](image-135.png)
 
-- find value 
+- Trong JavaScript, `find()` là method của Array, dùng để tìm phần tử đầu tiên thỏa mãn một điều kiện.
 
 ![alt text](image-87.png)
 
