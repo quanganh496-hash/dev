@@ -107,3 +107,58 @@ Các điều kiện cơ sở đóng vai trò thiết yếu trong đệ quy vì c
 ## the recurrence relation: 
 
 - Hệ thức truy hồi là biểu thức biểu diễn nghiệm của một bài toán dưới dạng hàm số của các nghiệm cho những trường hợp nhỏ hơn của cùng bài toán đó.
+
+# Backtracking
+
+- Quay lui (backtracking) là một phương pháp thuật toán dùng để tìm lời giải cho các bài toán có nhiều hướng đi khả thi.
+- Các lời giải được xây dựng từng bước một thông qua cơ chế đệ quy.
+- Nếu một hướng đi không dẫn đến lời giải do vi phạm các ràng buộc, thì hướng đi đó sẽ bị loại bỏ.
+
+## how backtracking is different from simple recursion.
+
+- Đệ quy đơn thuần là việc một hàm tự gọi chính nó cho đến khi đạt đến điều kiện cơ sở hoặc điều kiện kết thúc.
+- Quay lui (backtracking) là một dạng đệ quy có kiểm soát. Trong quay lui, trạng thái của bài toán được thay đổi trực tiếp ngay tại chỗ.
+- Đệ quy có kiểm soát nghĩa là bất cứ khi nào xác định được một hướng đi không dẫn đến lời giải, ta sẽ loại bỏ (cắt tỉa) hoặc từ bỏ hướng đi đó.
+
+## How does backtracking work?
+
+- Biểu diễn bài toán: Thuật toán quay lui (backtracking) được áp dụng cho các bài toán mà ta có thể xây dựng dần các ứng viên cho lời giải, đồng thời loại bỏ những ứng viên đó khi xác định rằng chúng không thể dẫn đến một lời giải hợp lệ.
+- Khám phá đệ quy: Thuật toán này tận dụng triệt để cơ chế đệ quy. Nó khám phá từng phương án một, phát triển dựa trên trạng thái hiện tại cho đến khi tìm thấy lời giải tiềm năng hoặc xác định rằng hướng đi đó không khả thi.
+- Loại bỏ hướng đi: Nếu trong quá trình khám phá, một hướng đi vi phạm bất kỳ ràng buộc nào của bài toán, thuật toán sẽ thực hiện quay lui (tức là quay lại các bước trước đó). Nó sẽ hủy bỏ lựa chọn gần nhất và thử phương án khả dụng tiếp theo.
+- Đệ quy có kiểm soát: Phương pháp này thường được mô tả là "đệ quy có kiểm soát", trong đó trạng thái của bài toán được thay đổi trực tiếp (in-place). Hàm đệ quy thường có một điều kiện cơ sở để kiểm tra xem đã tìm thấy lời giải hay chưa (ví dụ: tất cả các ô trong bảng Sudoku đã được điền đúng).
+- Xây dựng từng bước: Lời giải được xây dựng từng bước một; nếu tìm thấy lời giải hoàn chỉnh, nó sẽ được trả về; nếu không khả thi, hàm sẽ quay lui và thử một hướng đi khác.
+
+Ví dụ, hãy xem xét bài toán giải Sudoku. Mỗi khi điền một số, bạn cần kiểm tra xem nó có vi phạm quy tắc Sudoku hay không. Nếu có, bạn sẽ quay lui và thử số tiếp theo.
+
+Nhìn chung, quay lui giúp giảm độ phức tạp một cách hiệu quả bằng cách loại bỏ sớm các hướng đi chắc chắn sẽ thất bại, thay vì phải khám phá chúng đến cùng.
+
+## blueprint which you can use to solve any backtracking coding interview question.
+
+Để tạo một kế hoạch chi tiết có cấu trúc nhằm giải quyết các vấn đề quay lui, bạn có thể làm theo khung mã giả này:
+1. Định nghĩa hàm: Xác định hàm trợ giúp sẽ quản lý quá trình quay lui.
+
+```
+function backtrack(state) {
+    // Base case
+    if (isSolution(state)) {
+        saveSolution(state);
+        return;
+    }
+
+    // Recursive case
+    for (let option of options(state)) {
+        makeChoice(state, option);      // Modify the state
+        backtrack(state);               // Recursion
+        undoChoice(state, option);      // Backtrack
+    }
+}
+```
+
+2. Điều kiện cơ sở: Xác định thời điểm trạng thái hiện tại của bài toán tạo thành một lời giải hoàn chỉnh. Việc này có thể bao gồm kiểm tra xem tất cả các vị trí cần thiết đã được điền đúng hay chưa (ví dụ: trong trò chơi Sudoku).
+3. Khám phá các lựa chọn: Duyệt qua tất cả các lựa chọn khả thi tại trạng thái hiện tại. Ví dụ: điền một số vào ô trống trong Sudoku hoặc chọn một phần tử trong bài toán tổ hợp.
+4. Thay đổi trạng thái: Cập nhật trạng thái để phản ánh lựa chọn hiện tại. Bước này cho phép xây dựng lời giải tiềm năng tiếp theo.
+5. Đệ quy và Quay lui: Gọi hàm hỗ trợ theo phương thức đệ quy. Nếu một lựa chọn dẫn đến vi phạm ràng buộc, hãy hủy bỏ lựa chọn đó (quay lui) và thử một lựa chọn khác.
+6. Lặp lại cho đến khi hoàn tất: Tiếp tục quy trình này cho đến khi đã thử tất cả các cấu hình hoặc tìm được lời giải hợp lệ.
+
+Đối với những dạng bài tập này, kỹ thuật quay lui (backtracking) rất hữu ích, nhưng nó không phù hợp để giải quyết các bài toán tối ưu hóa.
+Nếu bạn cần tìm giá trị tốt nhất, lớn nhất, nhỏ nhất hoặc cực đại của một đại lượng nào đó, thì nhiều khả năng bài toán đó đòi hỏi phải sử dụng quy hoạch động thay vì quay lui.

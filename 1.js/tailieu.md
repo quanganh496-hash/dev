@@ -4,16 +4,21 @@
 
 - Variables are used to store data values and can be declared using var, let or const.
 
-| Thuộc tính    | var       | let   | const       |
-| ------------- | --------- | ----- | ----------- |
-| Scope         | Function  | Block | Block       |
-| Gán lại       | ✅         | ✅     | ❌           |
-| Khai báo lại  | ✅         | ❌     | ❌           |
-| Hoisting      | Có        | Có    | Có          |
-| Dùng phổ biến | ❌ (tránh) | ✅     | ✅ (ưu tiên) |
+![alt text](image-136.png)
 
+![alt text](image-137.png)
 
+![alt text](image-138.png)
 
+![alt text](image-139.png)\
+
+![alt text](image-140.png)
+
+![alt text](image-141.png)
+
+![alt text](image-142.png)
+
+![alt text](image-143.png)
 
 # 1. Function
 
